@@ -1,7 +1,7 @@
 
 wget https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana_5.3.0_amd64.deb 
 sudo apt-get install -y adduser libfontconfig
-sudo dpkg -i grafana_5.1.4_amd64.deb
+sudo dpkg -i grafana_5.3.0_amd64.deb 
 
 #启动服务
 #sudo service grafana-server start
