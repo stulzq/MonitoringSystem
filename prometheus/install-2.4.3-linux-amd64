@@ -1,0 +1,13 @@
+sudo mkdir /tmp/prometheus_install_temp
+sudo mkdir /opt/prometheus
+cd /tmp/prometheus_install_temp
+
+wget https://github.com/prometheus/prometheus/releases/download/v2.4.3/prometheus-2.4.3.linux-amd64.tar.gz
+tar -xzf prometheus-2.4.3.linux-amd64.tar.gz -C /opt/prometheus/
+cd /opt/prometheus/
+sudo rm -rf /tmp/prometheus_install_temp
+sudo mkdir 2.4.3
+sudo mv ./prometheus-2.4.3.linux-amd64/* ./2.4.3
+cd 2.4.3/
+
+
