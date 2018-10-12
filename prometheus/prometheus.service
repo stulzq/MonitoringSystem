@@ -1,0 +1,14 @@
+[Unit]
+Description=Prometheus 2.3.4
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/opt/prometheus/2.4.3/prometheus
+WorkingDirectory=/opt/prometheus/2.4.3/
+
+
+[Install]
+WantedBy=default.target
