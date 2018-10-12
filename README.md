@@ -44,3 +44,31 @@ systemctl restart grafana-server
 输入你配置的地址访问，默认登录用户名密码都是 `admin`
 
 ![1539238152788](assets/1539238152788.png)
+
+## 二.Prometheus
+
+### 1.安装
+
+使用 root 用户，或者具有 root 权限的用户执行以下命令：
+
+````shell
+curl https://raw.githubusercontent.com/stulzq/MonitoringSystem/master/prometheus/install-2.4.3-linux-amd64|sh
+````
+
+官方：https://prometheus.io/download/
+
+### 2.访问
+
+在浏览器输入 `http://<ip>:9090` 即可访问。默认有一个监控自己的 job
+
+![1539355374376](assets/1539355374376.png)
+
+### 3.操作
+
+````shell
+systemctl start promoetheus #启动服务
+systemctl stop promoetheus #停止服务
+systemctl restart promoetheus #重启服务
+systemctl status promoetheus #查看服务
+````
+
